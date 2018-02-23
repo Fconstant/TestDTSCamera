@@ -3625,7 +3625,7 @@ react-devtools-core@3.0.0:
 
 "react-native-camera@git+https://github.com/Fconstant/react-native-camera.git#ts-definitions":
   version "1.0.1"
-  resolved "git+https://github.com/Fconstant/react-native-camera.git#a94bad5e3739927dd50b850f68ed57a59f782e99"
+  resolved "git+https://github.com/Fconstant/react-native-camera.git#ba21875001df2e260feb87d71411ff89fe6942ea"
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.5.10"

@@ -11,4 +11,4 @@ Make sure you have `yarn` installed:
 npm i -g yarn
 ```
 
-__Important:__ I haven't linked the iOS react-native-camera module (because I can't ☹)
+__Important:__ I haven't tested on iOS (because I can't ☹)

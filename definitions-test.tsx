@@ -1,7 +1,7 @@
 // File created to only test type definitions.
 // This is NOT a functional code.
 import React from 'react';
-import DeprecatedCamera, { RNCamera as Camera, RNCameraProps as CameraProps } from 'react-native-camera';
+import DeprecatedCamera, { RNCamera as Camera, FaceDetector, RNCameraProps as CameraProps } from 'react-native-camera';
 import { Platform } from 'react-native';
 
 const Constants = Camera.Constants;
@@ -9,6 +9,14 @@ const Constants = Camera.Constants;
 const noop = () => {};
 
 const NoopComponent: React.StatelessComponent = () => null;
+
+function detectFaces() {
+    FaceDetector.detectFacesAsync('URI', {
+        detectLandmarks: FaceDetector.Constants.Landmarks.all,
+        runClassifications: FaceDetector.Constants.Classifications["none"],
+        mode: "accurate"
+    });
+}
 
 class ComponentToTest extends React.Component {
 

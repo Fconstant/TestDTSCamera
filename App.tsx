@@ -1,7 +1,7 @@
 // This example is from the react-native-camera default example, I've just added some TypeScript
 // It can be found at the official docs: https://github.com/react-native-community/react-native-camera/blob/master/docs/RNCamera.md
 
-import React, { Component } from 'react';
+import React from 'react';
 import {
 	AppRegistry,
 	Dimensions,
@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { RNCamera } from 'react-native-camera';
 
-export default class BadInstagramCloneApp extends Component {
+class AppExample extends React.Component {
 
 	private camera: RNCamera | null = null;
 
@@ -71,3 +71,5 @@ const styles = StyleSheet.create({
 		margin: 20
 	}
 });
+
+export default AppExample;
